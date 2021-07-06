@@ -39,7 +39,7 @@ return (
                     ></SavedBooks>))
                     ):(
                     <>
-                    <h3 align="center">There are no book currently saved</h3>
+                    <h3 align="center">There are no books currently saved</h3>
                     </>
                     )}
             </Col>

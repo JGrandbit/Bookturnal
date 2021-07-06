@@ -30,7 +30,7 @@ return (
                         <Form.Label>Search</Form.Label>
                         <Form.Control type="text" onChange={handleInputChange} placeholder="Title or Author"/>
                     </Form.Group>
-                    <Button variant="primary" className="float-right mb-2" onclick={handleSearch}>Search</Button>
+                    <Button variant="primary" className="float-right mb-2" onClick={handleSearch}>Search</Button>
                 </Form>
             </Col>
         </Row>
@@ -44,8 +44,8 @@ return (
                             {book.volumeInfo.title.length && book.volumeInfo.description ? <SearchedBooks
                             style={{padding: "10px"}}
                             title={book.volumeInfo.title || "Title not found"}
-                            authors={book.volumeInfo.authors || ["No authors listed"]}
-                            link={book.valumeInfo.canonicalVolumeLink}
+                            authors={book.volumeInfo.authors || ["Author not found"]}
+                            link={book.volumeInfo.canonicalVolumeLink}
                             thumbnail={(imageLinks && imageLinks.thumbnail)}
                             descrption={book.volumeInfo.description}/> : null}
                         </div>                    

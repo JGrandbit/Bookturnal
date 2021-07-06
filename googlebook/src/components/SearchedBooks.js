@@ -17,7 +17,8 @@ return (
     <Card.Header>
         <h3 className="d-inline-flex mr-3">{props.title}</h3>
         <p className="d-line-flex mt-2">by {props.authors.join(' , ')}</p>
-        <Button className="float-right mr-1" size="md" variant="primary" onClick={() => !saved && handleSave (
+        <Button className="float-right" size="sm" variant="primary" href={props.link} target={"_blank"}>View</Button>
+        <Button className="float-right mr-1" size="sm" variant="primary" onClick={() => !saved && handleSave (
             {
                 title: props.title,
                 authors: props.authors,
@@ -34,4 +35,4 @@ return (
     </Card>
 );
         }
-        export default SearchedBooks
+        export default SearchedBooks;
